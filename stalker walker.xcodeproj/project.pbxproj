@@ -14,6 +14,11 @@
 		CE29076C2802470A00F9BCE9 /* stalker_walker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE29076A2802470A00F9BCE9 /* stalker_walker.xcdatamodeld */; };
 		CE29076E2802471100F9BCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE29076D2802471100F9BCE9 /* Assets.xcassets */; };
 		CE2907712802471100F9BCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE29076F2802471100F9BCE9 /* LaunchScreen.storyboard */; };
+		CE29077928024B0200F9BCE9 /* icons8-instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077828024B0100F9BCE9 /* icons8-instagram.png */; };
+		CE29077B28024B2200F9BCE9 /* icons8-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077A28024B2200F9BCE9 /* icons8-twitter.png */; };
+		CE29077D28024B3800F9BCE9 /* icons8-tiktok.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */; };
+		CE29077F28024FB700F9BCE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29077E28024FB700F9BCE9 /* Constants.swift */; };
+		CE290781280255E400F9BCE9 /* icons8-black_stalker.png in Resources */ = {isa = PBXBuildFile; fileRef = CE290780280255E300F9BCE9 /* icons8-black_stalker.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		CE29076D2802471100F9BCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2907702802471100F9BCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2907722802471100F9BCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE29077828024B0100F9BCE9 /* icons8-instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-instagram.png"; sourceTree = "<group>"; };
+		CE29077A28024B2200F9BCE9 /* icons8-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter.png"; sourceTree = "<group>"; };
+		CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-tiktok.png"; sourceTree = "<group>"; };
+		CE29077E28024FB700F9BCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE290780280255E300F9BCE9 /* icons8-black_stalker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-black_stalker.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				CE29076F2802471100F9BCE9 /* LaunchScreen.storyboard */,
 				CE2907722802471100F9BCE9 /* Info.plist */,
 				CE29076A2802470A00F9BCE9 /* stalker_walker.xcdatamodeld */,
+				CE29077828024B0100F9BCE9 /* icons8-instagram.png */,
+				CE29077A28024B2200F9BCE9 /* icons8-twitter.png */,
+				CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */,
+				CE29077E28024FB700F9BCE9 /* Constants.swift */,
+				CE290780280255E300F9BCE9 /* icons8-black_stalker.png */,
 			);
 			path = "stalker walker";
 			sourceTree = "<group>";
@@ -130,6 +145,10 @@
 			files = (
 				CE2907712802471100F9BCE9 /* LaunchScreen.storyboard in Resources */,
 				CE29076E2802471100F9BCE9 /* Assets.xcassets in Resources */,
+				CE29077B28024B2200F9BCE9 /* icons8-twitter.png in Resources */,
+				CE290781280255E400F9BCE9 /* icons8-black_stalker.png in Resources */,
+				CE29077D28024B3800F9BCE9 /* icons8-tiktok.png in Resources */,
+				CE29077928024B0200F9BCE9 /* icons8-instagram.png in Resources */,
 				CE2907692802470A00F9BCE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE29077F28024FB700F9BCE9 /* Constants.swift in Sources */,
 				CE2907662802470A00F9BCE9 /* ViewController.swift in Sources */,
 				CE2907622802470A00F9BCE9 /* AppDelegate.swift in Sources */,
 				CE29076C2802470A00F9BCE9 /* stalker_walker.xcdatamodeld in Sources */,
