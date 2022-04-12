@@ -14,11 +14,11 @@
 		CE29076C2802470A00F9BCE9 /* stalker_walker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE29076A2802470A00F9BCE9 /* stalker_walker.xcdatamodeld */; };
 		CE29076E2802471100F9BCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE29076D2802471100F9BCE9 /* Assets.xcassets */; };
 		CE2907712802471100F9BCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE29076F2802471100F9BCE9 /* LaunchScreen.storyboard */; };
-		CE29077928024B0200F9BCE9 /* icons8-instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077828024B0100F9BCE9 /* icons8-instagram.png */; };
-		CE29077B28024B2200F9BCE9 /* icons8-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077A28024B2200F9BCE9 /* icons8-twitter.png */; };
-		CE29077D28024B3800F9BCE9 /* icons8-tiktok.png in Resources */ = {isa = PBXBuildFile; fileRef = CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */; };
 		CE29077F28024FB700F9BCE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29077E28024FB700F9BCE9 /* Constants.swift */; };
 		CE290781280255E400F9BCE9 /* icons8-black_stalker.png in Resources */ = {isa = PBXBuildFile; fileRef = CE290780280255E300F9BCE9 /* icons8-black_stalker.png */; };
+		CE376DA32804D16200E9EF1F /* InstagramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE376DA22804D16200E9EF1F /* InstagramData.swift */; };
+		CE376DA52804E54500E9EF1F /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE376DA42804E54400E9EF1F /* InstagramModel.swift */; };
+		CEE2BB0228049B31000C7B38 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2BB0128049B31000C7B38 /* InstagramManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		CE29076D2802471100F9BCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2907702802471100F9BCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2907722802471100F9BCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE29077828024B0100F9BCE9 /* icons8-instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-instagram.png"; sourceTree = "<group>"; };
-		CE29077A28024B2200F9BCE9 /* icons8-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter.png"; sourceTree = "<group>"; };
-		CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-tiktok.png"; sourceTree = "<group>"; };
 		CE29077E28024FB700F9BCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE290780280255E300F9BCE9 /* icons8-black_stalker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-black_stalker.png"; sourceTree = "<group>"; };
+		CE376DA22804D16200E9EF1F /* InstagramData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramData.swift; sourceTree = "<group>"; };
+		CE376DA42804E54400E9EF1F /* InstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
+		CEE2BB0128049B31000C7B38 /* InstagramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,19 +70,43 @@
 			children = (
 				CE2907612802470A00F9BCE9 /* AppDelegate.swift */,
 				CE2907632802470A00F9BCE9 /* SceneDelegate.swift */,
-				CE2907652802470A00F9BCE9 /* ViewController.swift */,
-				CE2907672802470A00F9BCE9 /* Main.storyboard */,
+				CEE2BB0028049B10000C7B38 /* Model */,
+				CEE2BAFE28049AF0000C7B38 /* Controller */,
+				CEE2BAFD28049AB9000C7B38 /* View */,
 				CE29076D2802471100F9BCE9 /* Assets.xcassets */,
 				CE29076F2802471100F9BCE9 /* LaunchScreen.storyboard */,
 				CE2907722802471100F9BCE9 /* Info.plist */,
 				CE29076A2802470A00F9BCE9 /* stalker_walker.xcdatamodeld */,
-				CE29077828024B0100F9BCE9 /* icons8-instagram.png */,
-				CE29077A28024B2200F9BCE9 /* icons8-twitter.png */,
-				CE29077C28024B3800F9BCE9 /* icons8-tiktok.png */,
 				CE29077E28024FB700F9BCE9 /* Constants.swift */,
 				CE290780280255E300F9BCE9 /* icons8-black_stalker.png */,
 			);
 			path = "stalker walker";
+			sourceTree = "<group>";
+		};
+		CEE2BAFD28049AB9000C7B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2907672802470A00F9BCE9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE2BAFE28049AF0000C7B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE2907652802470A00F9BCE9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE2BB0028049B10000C7B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2BB0128049B31000C7B38 /* InstagramManager.swift */,
+				CE376DA22804D16200E9EF1F /* InstagramData.swift */,
+				CE376DA42804E54400E9EF1F /* InstagramModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +169,7 @@
 			files = (
 				CE2907712802471100F9BCE9 /* LaunchScreen.storyboard in Resources */,
 				CE29076E2802471100F9BCE9 /* Assets.xcassets in Resources */,
-				CE29077B28024B2200F9BCE9 /* icons8-twitter.png in Resources */,
 				CE290781280255E400F9BCE9 /* icons8-black_stalker.png in Resources */,
-				CE29077D28024B3800F9BCE9 /* icons8-tiktok.png in Resources */,
-				CE29077928024B0200F9BCE9 /* icons8-instagram.png in Resources */,
 				CE2907692802470A00F9BCE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +184,11 @@
 				CE29077F28024FB700F9BCE9 /* Constants.swift in Sources */,
 				CE2907662802470A00F9BCE9 /* ViewController.swift in Sources */,
 				CE2907622802470A00F9BCE9 /* AppDelegate.swift in Sources */,
+				CEE2BB0228049B31000C7B38 /* InstagramManager.swift in Sources */,
 				CE29076C2802470A00F9BCE9 /* stalker_walker.xcdatamodeld in Sources */,
 				CE2907642802470A00F9BCE9 /* SceneDelegate.swift in Sources */,
+				CE376DA52804E54500E9EF1F /* InstagramModel.swift in Sources */,
+				CE376DA32804D16200E9EF1F /* InstagramData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
