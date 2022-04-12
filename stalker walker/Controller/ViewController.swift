@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var followingButton: UIButton!
     
     
+    
+    
+    
+    
+    
     var instagramManager = InstagramManager()
     
     
@@ -30,6 +35,7 @@ class ViewController: UIViewController {
         
         instagramManager.delegate = self
         searchField.delegate = self
+        
     }
 
     
@@ -61,11 +67,11 @@ extension ViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if let city = searchField.text {
+        if let username = searchField.text {
            // instagramManager.fetchWeather(cityName: city)
-            print(city)
+            instagramManager.fetchIg(username: username)
+            print(username)
         }
-        //use searchTextField.text to get the weather for the city
         searchField.text = ""
     }
 
@@ -93,6 +99,8 @@ extension ViewController: InstagramManagerDelegate {
             //self.followersButton.titleLabel = instagram.followers
             self.followingButton.setTitle(instagram.followingString, for: .normal)
             //self.followingButton.titleLabel = instagram.following
+            
+            
             
         }
     }

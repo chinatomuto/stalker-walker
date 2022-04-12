@@ -38,7 +38,7 @@ struct Top: Codable {
 struct Figures: Codable {
     let posts: Int
     let followers: Int
-    let following: Int
+    let followings: Int
 }
 
 struct Profile_picture: Codable {
